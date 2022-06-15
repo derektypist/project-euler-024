@@ -36,3 +36,7 @@ As a user, I expect the function `lexicographicPermutations(999999)` (position 1
 **Information Architecture**
 
 The function `lexicographicPermutations(n)` returns a number, where `n` is a number index between 0 and 3628799.  The number index is the position minus 1.  For example, the 3rd number is the number at index 2.
+
+## Features
+
+Allows the user to enter the number position as well as getting the lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 in that position.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
