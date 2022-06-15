@@ -40,3 +40,11 @@ The function `lexicographicPermutations(n)` returns a number, where `n` is a num
 ## Features
 
 Allows the user to enter the number position as well as getting the lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 in that position.  Performs checks on valid user input.  If the input is not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.0-Beta1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
