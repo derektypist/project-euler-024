@@ -16,7 +16,16 @@ function getNumberInfo() {
     } else {
         let numIndex = num - 1;
         txt += `You have entered the number ${num}. <p>`;
-        txt += `Lexicographic Permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 at Position ${num} is ${lexicographicPermutations(numIndex)}.`;
+        txt += `Lexicographic Permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 at Position ${num} is `;
+        /*
+            Display Leading Zero if the Lexicographic Permutation is less than
+            1000000000
+        */
+        if (lexicographicPermutations(numIndex) < 1000000000) {
+            txt += `0${lexicographicPermutations(numIndex)}.`;
+        } else {
+            txt += `${lexicographicPermutations(numIndex)}.`;
+        }
     }
 
     // Display Information in the Browser
