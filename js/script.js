@@ -22,3 +22,23 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+/*
+    Function to Return the Lexicographic Permutation of the digits
+    0, 1, 2, 3, 4, 5, 6, 7, 8 and 9 at index n
+    (Position is n+1)
+    lexicographicPermutations(699999) returns 1938246570
+    lexicographicPermutations(899999) returns 2536987410
+    lexicographicPermutations(900000) returns 2537014689
+    lexicographicPermutations(999999) returns 2783915460
+
+*/
+function lexicographicPermutations(n) {
+    const digits = [0,1,2,3,4,5,6,7,8,9];
+    let permutation = "";
+    for (let i=0;i<10;i++) {
+        permutation += digits.splice(Math.floor(n/FACTORIALS[i]),1);
+        n = n % FACTORIALS[i];
+    }
+    return Number(permutation);
+}
