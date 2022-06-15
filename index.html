@@ -20,7 +20,30 @@
     <section class="container-fluid">
         <p>A permutation is an ordered arrangement of objects.  For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4.  If all the permutations are listed numerically or alphabetically, we call it lexicographic order.  The lexicographic permutations of 0, 1 and 2 are:</p>
         <p><span class="permutations">012 021 102 120 201 210</span></p>
-        <p>The aim is to find the nth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9.</p>
+        <p>The aim is to find the nth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9.  Begin by enter the number index in the input field.</p>
+    </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1 and 3628800 (e.g. 1000000)" title="Enter whole number between 1 and 3628800 (e.g. 1000000)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+        </form>
+
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
     </section>
 </body>
 </html>
