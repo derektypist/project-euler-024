@@ -10,18 +10,29 @@ Information at [Project Euler 024](https://projecteuler.net/problem=24)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 1 and 3628800 in the input field and click on the Submit Button.  As long as your input is valid, you will see the number entered (position) as well as the nth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9.  For example, if you entered 700000 (which is index 699999), you would expect to get 1938246570.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
 
-As a user, I expect the function `lexicographicPermutations(699999)` to return a number.
+As a user, I expect to get an error message if I do any of:
 
-As a user, I expect the function `lexicographicPermutations(699999)` to return 1938246570.
+- Not enter anything in the input field
+- Enter text other than a number
+- Entering a number less than 1 or greater than 3628800 (10!)
+- Entering a number, but it is not an integer
 
-As a user, I expect the function `lexicographicPermutations(899999)` to return 2536987410.
+As a user, I expect the function `lexicographicPermutations(699999)` (position 700000th) to return a number.
 
-As a user, I expect the function `lexicographicPermutations(900000)` to return 2537014689.
+As a user, I expect the function `lexicographicPermutations(699999)` (position 700000th) to return 1938246570.
 
-As a user, I expect the function `lexicographicPermutations(999999)` to return 2783915460.
+As a user, I expect the function `lexicographicPermutations(899999)` (position 900000th) to return 2536987410.
+
+As a user, I expect the function `lexicographicPermutations(900000)` (position 900001st) to return 2537014689.
+
+As a user, I expect the function `lexicographicPermutations(999999)` (position 1000000th) to return 2783915460.
 
 **Information Architecture**
 
-The function `lexicographicPermutations(n)` returns a number, where `n` is a number index between 0 and 3628799.
+The function `lexicographicPermutations(n)` returns a number, where `n` is a number index between 0 and 3628799.  The number index is the position minus 1.  For example, the 3rd number is the number at index 2.
